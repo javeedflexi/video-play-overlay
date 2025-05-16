@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Play Button Overlay</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Flexi-Add play button</h1>
+            <p class="subtitle">Add a play button to your images with just a click</p>
+        </header>
+        
+        <div class="upload-section">
+            <label for="imageInput" class="file-input-label">
+                <span class="file-input-icon">📁</span>
+                <span class="file-input-text">Choose an image</span>
+                <input type="file" id="imageInput" accept="image/*">
+            </label>
+        </div>
+
+        <!-- Example Output Section -->
+        <div class="example-section">
+            <h2>Example Output</h2>
+            <p class="example-subtitle">See how your images will look with a play button overlay</p>
+            
+            <div class="example-container">
+                <div class="example-item">
+                    <div class="example-image-wrapper">
+                        <img src="before.png" alt="Original image example" class="example-image">
+                    </div>
+                    <p class="example-caption">Before</p>
+                </div>
+                
+                <div class="example-item">
+                    <div class="example-image-wrapper">
+                        <img src="after.png" alt="Image with play button example" class="example-image">
+                    </div>
+                    <p class="example-caption">After</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <div class="image-card">
+                <h3>Original Image</h3>
+                <div class="image-wrapper">
+                    <img id="originalImage" alt="Original image">
+                </div>
+            </div>
+            
+            <div class="image-card">
+                <h3>Image with Play Button</h3>
+                <div class="image-wrapper">
+                    <canvas id="outputCanvas"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <button id="downloadBtn" disabled>
+            <span class="download-icon">⬇️</span>
+            <span>Download Image</span>
+        </button>
+
+        <footer className="bg-[#0f172a] text-white py-6 px-4 text-center mt-12 rounded-t-xl">
+            <p className="text-sm">
+              © 2025 FlexiFunnels. All rights reserved.
+            </p>
+            <div className="mt-2 space-x-4 text-sm">
+              <a href="https://flexifunnels.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                Privacy Policy
+              </a>
+              <a href="https://flexifunnels.com/terms-of-service" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                Terms of Service
+              </a>
+              <a href="https://flexifunnels.com/contact" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                Contact Us
+              </a>
+            </div>
+          </footer>
+          
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
