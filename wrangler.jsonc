@@ -4,7 +4,7 @@
  */
 {
     "$schema": "node_modules/wrangler/config-schema.json",
-    "name": "termsbuilder-w",
+    "name": "video-play-overlay-w",
     //"main": "worker/index.js",
     "compatibility_date": "2025-06-20",
     "assets": {
