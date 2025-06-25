@@ -1,0 +1,15 @@
+{
+  "name": "video-play-overlay",
+  "version": "1.0.0",
+  "description": "A modern web application that allows users to add customizable play button overlays to their images.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "wrangler": "^4.21.2"
+  }
+}
